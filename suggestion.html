@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Gurukul</title>
+      <link rel="icon" type="jpeg/png" href="images//logo.jfif">
+        <style type="text/css">
+               .center
+            {
+              font-family: sans-serif;
+            }
+            .marquee
+            {
+              margin: 15px; 
+              position-relative;
+              overflow: hidden;
+              animation: anim 5s infinite;
+            }
+            @keyframes anim
+            {
+               0%{ color: #F00;  }
+               25%{ color:#66FF00;  }
+               50%{color: #FF0080;}
+               100%{ color: #F00;  }
+            }
+   </style>
+  </head>
+  <body >
+  	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <b><h4 style="color: white;font-family: serif;">New Gurukul Center of Exellence</h4></b>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Home</h5></b> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">About Us</h5></b></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="admission.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Registration</h5></b></a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" href="suggestion.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Suggestion&Feedback</h5></b></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html" style="color: white;"><b><h5 style="text-decoration: underline; font-family: serif;">Contact Us</h5></b></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+      <p style="color: white;"><svg class="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="dark" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"></path>
+  <path fill-rule="evenodd" d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z" clip-rule="evenodd"></path>
+  <path d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"></path>
+</svg>Gurukul434@gmail.com <br>   +91 7376303895  </p>
+    </form>
+  </div>
+</nav>
+   <div class="container center">
+         <marquee class="marquee"><h4><b>Not Only Study , Just Feel The Concept</b></h4></marquee>
+       </div> 
+<div class="container my-0">
+<div class="card">
+  <div class="card-header">
+    Suggestion&Feedback
+  </div>
+  <div class="card-body" style="height: 25rem;">
+    <!-- <form class="was-validated"> -->
+      <form method="post" action="feedback.php" onsubmit="return validation()">
+  <div class="mb-3">
+    <label ><b>Message</b></label>
+    <textarea class="form-control " id="Textarea" name="Textarea" placeholder="Enter Your suggestion Length should be 200 words" style="height: 14em;"></textarea>
+    <span id="texterror" class="text-danger font-weight-bold"></span>
+    <!-- <div class="container"> -->
+     <p style="color: gold;"> <i>Please enter a message in the textarea.</i></p>
+     <div class="form-row">
+     <div class="col-10">
+      <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter your E-mail">
+      <span id="emailerror" class="text-danger font-weight-bold"></span>
+    </div>
+    <div class="col-1">
+      <input type="submit" name="submit" class="btn btn-primary mb-2" value="Send">
+    </div>
+     <!-- </div>
+    </div>
+  </div> -->
+ </div> 
+</div>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- <div class="container my-2">
+	<form>
+  <div class="form-row">
+    <div class="col-7">
+      <input type="email" class="form-control" name="email" placeholder="Enter your E-mail">
+    </div>
+    <div class="col-auto">
+      <input type="submit" class="btn btn-primary mb-2" value="Submit">
+    </div>
+  </div>
+</form>
+</div> -->
+ 
+  <footer class="pt-4 my-md-3 pt-md-5 border-top bg-dark " >
+      <div class="container ">
+
+    <div class="row">
+           <div class="col-4 col-md" style="color: white;">
+        <h5>Contact</h5>
+        <ul class="list-unstyled text-small">
+          <span class="iconlist-icon fa fa-fw fa-map-marker"></span>
+                                  <span class="iconlist-title">Ramdaspur Majhauli Bikapur AYODHYA(U.P)</span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw fa-phone"></span>
+                                  <span class="iconlist-title">+91-7376303895 </span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw  fa-phone"></span>
+                                  <span class="iconlist-title">+91-7668388888</span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw  fa-envelope"></span>
+                                  <span class="iconlist-title">Gurkul4343@gmail.com</span>
+                              </li>
+
+                              
+        </ul>
+      </div>
+      <div class="col-4 col-md" style="color: white;">
+        <h5 style="text-align: right;">About us</h5>
+        <ul class="list-unstyled text-small">
+          <li style="text-align: right;"><a  href="about.html">Team</a></li>
+          <li style="text-align: right;"><a  href="privacy.html">Privacy</a></li>
+          <li style="text-align: right;"><a  href="privacy.html">Terms</a></li>
+         
+        </ul>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="4" height="4">
+        <small class="d-block mb-8 text-muted" style="text-align: center;">© copyright 2017-2020 All Right reserved</small>
+      </div>
+    </div>
+   </div>
+  </footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function validation() {
+        var text= document.getElementById("Textarea").value;
+        var email= document.getElementById("inputEmail").value;
+
+          var regextext=/^[A-Za-z0-9_,'"-#&*\. ]{3,}$/;
+          var regexemail=/^([A-Za-z0-9_\.-]+)@([A-Za-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+            if(regextext.test(text))
+            {
+              document.getElementById("texterror").innerHTML=" ";
+            }
+            else
+            {
+              document.getElementById("texterror").innerHTML="** Textarea is invalid";
+              return false;
+            }
+            if(regexemail.test(email))
+            {
+              document.getElementById("emailerror").innerHTML=" ";
+            }
+            else
+            {
+              document.getElementById("emailerror").innerHTML="** Email is invalid";
+              return false;
+            }
+      }
+    </script>
+  </body>
+</html>

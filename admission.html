@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Gurukul</title>
+      <link rel="icon" type="jpeg/png" href="images//logo.jfif">
+        <style type="text/css">
+               .center
+            {
+              font-family: sans-serif;
+            }
+            .marquee
+            {
+              margin: 15px; 
+              position-relative;
+              overflow: hidden;
+              animation: anim 5s infinite;
+            }
+            @keyframes anim
+            {
+               0%{ color: #F00;  }
+               25%{ color:#66FF00;  }
+               50%{color: #FF0080;}
+               100%{ color: #F00;  }
+            }
+   </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="indext.html"style="color: white;font-family: serif;"><b><h5>New Gurukul Center of Excellence</h5></b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Home</h5></b> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">About Us</h5></b></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="admission.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Registration</h5></b></a>
+      </li> 
+      <li class="nav-item active">
+        <a class="nav-link" href="suggestion.html"style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Suggestion&Feedback</h5></b></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html" style="color: white;"><b><h5 style="text-decoration: underline;font-family: serif;">Contact Us</h5></b></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+      <p style="color: white;"><svg class="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="dark" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd"></path>
+  <path fill-rule="evenodd" d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z" clip-rule="evenodd"></path>
+  <path d="M6.752 8.932l.432-.252-.504-.864-.432.252.504.864zm-6 3.5l6-3.5-.504-.864-6 3.5.504.864zm8.496-3.5l-.432-.252.504-.864.432.252-.504.864zm6 3.5l-6-3.5.504-.864 6 3.5-.504.864z"></path>
+</svg>Gurukul4343@gmail.com <br>   +91 7376303895  </p>
+    </form>
+  </div>
+</nav>
+  
+  <div class="container center">
+         <marquee class="marquee"><h4><b>Not Only Study , Just Feel The Concept</b></h4></marquee>
+       </div> 
+
+
+<div class="container my-3">
+<div class="card ">
+  <div class="card-header" style="text-align: center;">
+  <h4> <b> <i>Student's Registration Form</i></b></h4>
+  </div>
+  <div class="card-body" style="height: 65rem;">
+    <form method="post" action="registration.php" onsubmit="return validation()">
+  <div class="mb-3">
+    
+    <div class="form-group">
+    <label for="inputSelect">Select your class</label>
+    <select class="form-control" id="inputSelect" name="inputSelect">
+      <option value="Nursery">Nine(9th)</option>
+      <option value="First">High School(10th)</option>
+      <option value="Second">First Year(11th)</option>
+      <option value="Third">Intermediate(12th)</option>
+      
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+      <label for="inputEmail">E-mail</label>
+      <input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter E-mail" >
+      <span id="emailerror" class="text-danger font-weight-bold"></span>
+    </div>
+     <!-- </div > -->
+    <div class="form-group col-md-6">
+      <label for="inputName">Name</label>
+      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Student Name">
+      <span id="nameerror" class="text-danger font-weight-bold"></span>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputFname">Father's name</label>
+      <input type="text" class="form-control" id="inputFname" name="inputFname" placeholder="Father's name">
+      <span id="ferror" class="text-danger font-weight-bold"></span>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputMname">Mother's name</label>
+      <input type="text" class="form-control" id="inputMname" name="inputMname" placeholder="Mother's name">
+      <span id="merror" class="text-danger font-weight-bold"></span>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputMobileno">Mobile No.</label>
+      <input type="number" class="form-control" id="inputMobileno" name="inputMobileno" placeholder="Enter Mobile No.">
+      <span id="mobileerror" class="text-danger font-weight-bold"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="1234 Main St">
+      <span id="adderror" class="text-danger font-weight-bold"></span>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" name="inputAddress2" placeholder="Apartment, studio, or floor">
+      <span id="add2error" class="text-danger font-weight-bold"></span>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" name="inputCity">
+        <span id="cityerror" class="text-danger font-weight-bold"></span>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control" name="inputState">
+  
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Hariyana">Hariyana</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="number" class="form-control" id="inputZip" name="inputZip">
+      <span id="ziperror" class="text-danger font-weight-bold"></span>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-8">
+    <input type="reset"  value="reset" class="btn btn-warning">
+  </div>
+  <div class="col-auto">
+    <input type="submit" name="submit" value="Submit" class="btn btn-primary" >
+  </div>
+    
+  </div>
+    </form>
+  </div>
+</div>
+</div>
+ <footer class="pt-4 my-md-3 pt-md-5 border-top bg-dark" >
+      <div class="container ">
+
+    <div class="row">
+           <div class="col-4 col-md" style="color: white;">
+        <h5>Contact</h5>
+        <ul class="list-unstyled text-small">
+          <span class="iconlist-icon fa fa-fw fa-map-marker"></span>
+                                  <span class="iconlist-title">Ramdaspur Majhauli Bikapur AYODHYA(U.P)</span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw fa-phone"></span>
+                                  <span class="iconlist-title">+91-7376303895 </span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw  fa-phone"></span>
+                                  <span class="iconlist-title">+91-7668388888</span>
+                              </li>
+                            <li>
+                <span class="iconlist-icon fa fa-fw  fa-envelope"></span>
+                                  <span class="iconlist-title">Gurukul4343@gmail.com</span>
+                              </li>
+                              
+        </ul>
+      </div>
+      <div class="col-4 col-md" style="color: white;">
+        <h5 style="text-align: right;">About us</h5>
+        <ul class="list-unstyled text-small">
+          <li style="text-align: right;"><a  href="about.html">Team</a></li>
+          <li style="text-align: right;"><a  href="privacy.html">Privacy</a></li>
+          <li style="text-align: right;"><a  href="privacy.html">Terms</a></li>
+         
+        </ul>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="4" height="4">
+        <small class="d-block mb-8 text-muted" style="text-align: center;">© copyright 2017-2020 All Right reserved</small>
+      </div>
+    </div>
+   </div>
+  </footer>
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function validation() {
+        var inputEmail=document.getElementById("inputEmail").value;
+        var inputName=document.getElementById("inputName").value;
+        var inputFname=document.getElementById("inputFname").value;
+        var inputMname=document.getElementById("inputMname").value;
+        var inputMobileno=document.getElementById("inputMobileno").value;
+        var inputAddress=document.getElementById("inputAddress").value;
+        var inputAddress2=document.getElementById("inputAddress2").value;
+        var inputCity=document.getElementById("inputCity").value;
+        var inputZip=document.getElementById("inputZip").value;
+
+        var emailcheck  = /^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})(.[a-z]{2,20})?$/;
+        var name=/^[A-Za-z\. ]{3,30}$/;
+        var fname=/^[A-Za-z\. ]{3,30}$/;
+        var mname=/^[A-Za-z\. ]{3,30}$/;
+        var mobile=/^[6-9][0-9]{9}$/;
+        var add=/^[A-Za-z0-9\. ]{3,}$/;
+        var add2=/^[A-Za-z0-9\. ]{3,}$/;
+        var city=/^[A-Za-z ]{3,30}$/;
+        var zip=/^[0-9]{6}$/;
+        if(emailcheck.test(inputEmail))
+        {
+          document.getElementById("emailerror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("emailerror").innerHTML="** E-mail is invailid";
+          return false;
+        }
+        if(name.test(inputName))
+        {
+          document.getElementById("nameerror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("nameerror").innerHTML="** Name is invailid";
+          return false;
+        }
+        if(fname.test(inputFname))
+        {
+          document.getElementById("ferror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("ferror").innerHTML="** Father's Name is invailid";
+          return false;
+        }
+        if(mname.test(inputMname))
+        {
+          document.getElementById("merror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("merror").innerHTML="** Mother's Name is invailid";
+          return false;
+        }
+        if(mobile.test(inputMobileno))
+        {
+          document.getElementById("mobileerror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("mobileerror").innerHTML="** Mobile no. is invailid";
+          return false;
+        }
+        if(add.test(inputAddress))
+        {
+          document.getElementById("adderror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("adderror").innerHTML="** Address is invailid";
+          return false;
+        }
+        if(add2.test(inputAddress2))
+        {
+          document.getElementById("add2error").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("add2error").innerHTML="** Address2 is invailid";
+          return false;
+        }
+        if(city.test(inputCity))
+        {
+          document.getElementById("cityerror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("cityerror").innerHTML="** City is invailid";
+          return false;
+        }
+        if(zip.test(inputZip))
+        {
+          document.getElementById("ziperror").innerHTML=" ";
+        }
+        else
+        {
+          document.getElementById("ziperror").innerHTML="** Zip is invailid";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
